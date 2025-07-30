@@ -7,8 +7,8 @@ class Settings(BaseSettings):
     DATABASE_HOST: str = "localhost"
     DATABASE_PORT: int = 5432
     DATABASE_NAME: str = "db"
-    DATABASE_USER: str = os.getenv("DATABASE_USER")
-    DATABASE_PASSWORD: str = os.getenv("DATABASE_PASSWORD")
+    DATABASE_USER: str = os.getenv("DATABASE_USER") or "postgres.zjamvlwslzldqmqjzphz"
+    DATABASE_PASSWORD: str = os.getenv("DATABASE_PASSWORD") or "1aT9Q0L9ln9ExyQT"
     DATABASE_URL: str = f"postgresql://{DATABASE_USER}:{DATABASE_PASSWORD}@{DATABASE_HOST}:{DATABASE_PORT}/{DATABASE_NAME}"
     SECRET_KEY: str = "secret"
     ALGORITHM: str = "HS256"

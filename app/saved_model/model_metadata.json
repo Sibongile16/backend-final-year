@@ -1,0 +1,1 @@
+{"Model": "XGBoost", "Accuracy": 0.9871, "Precision": 0.9902, "Recall": 0.9899, "F1 Score": 0.9899, "ROC AUC": 0.9985, "Std Dev (F1)": 0.0134}
